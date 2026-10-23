@@ -1,4 +1,4 @@
-# Realistic-Tribute_EndlessSky
+# Dominate-Tech_EndlessSky
 
 ### Currently runs Endless Sky v0.11.2. No other known compatibility information.
 
