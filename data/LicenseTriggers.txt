@@ -1,0 +1,104 @@
+# Copyright (c) 2026 by ChemtrailOperator
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+# This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github
+
+# Incipias \open
+
+# Pon'tes
+
+# Gegno \fold
+
+# Gegno Scin \open
+
+# Gegno Vi \fold
+
+# \close
+
+# Human \fold
+
+# Republic \open
+
+# Deep \fold
+
+# Syndicate \fold
+
+# Free Worlds \fold
+
+# Pirates \fold
+
+# Remnant \fold
+
+# \close
+
+# Coalition \fold
+
+# Kimek \open
+
+# Saryd \fold
+
+# Arach \fold
+
+# Heliarch \fold
+
+# \close
+
+# Hai \fold
+
+# Normal Hai \open
+
+# Unfettered \fold
+
+# \close
+
+# Kor Efreti \fold
+
+# Wanderer \fold
+
+# Successor \fold
+
+# Old Houses \open
+
+# New Houses \fold
+
+# High Houses \fold
+
+# People's Houses \fold
+
+# \close
+# Bunrodea \fold
+
+# Erabu \open
+
+# Megasa \fold
+
+# \close
+
+# Avgi \fold
+
+# Consonance \open
+
+# Twilight Guard \fold
+
+# Old Avgi \fold
+
+# Dissonance \fold
+
+# \close
+
+# Quarg \fold
+
+# Pug \fold
+
+# \close
+
+

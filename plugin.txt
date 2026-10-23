@@ -1,0 +1,8 @@
+name Realistic-Tribute
+about `Gives licenses of all dominated factions.`
+version 0.1
+authors
+	ChemtrailOperator
+dependencies
+	optional
+		
