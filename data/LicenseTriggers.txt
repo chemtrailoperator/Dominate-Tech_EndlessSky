@@ -12,93 +12,145 @@
 # this program. If not, see <https://www.gnu.org/licenses/>.
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github
 
-# Incipias \open
-
-# Pon'tes
-
-# Gegno \fold
-
-# Gegno Scin \open
-
-# Gegno Vi \fold
-
-# \close
-
-# Human \fold
-
-# Republic \open
-
-# Deep \fold
-
-# Syndicate \fold
-
-# Free Worlds \fold
-
-# Pirates \fold
-
-# Remnant \fold
-
-# \close
-
-# Coalition \fold
-
-# Kimek \open
-
-# Saryd \fold
-
-# Arach \fold
-
-# Heliarch \fold
-
-# \close
-
-# Hai \fold
-
-# Normal Hai \open
-
-# Unfettered \fold
-
-# \close
-
-# Kor Efreti \fold
-
-# Wanderer \fold
-
-# Successor \fold
-
-# Old Houses \open
-
-# New Houses \fold
-
-# High Houses \fold
-
-# People's Houses \fold
-
-# \close
-# Bunrodea \fold
-
-# Erabu \open
-
-# Megasa \fold
-
-# \close
-
-# Avgi \fold
+# Avgi \open
 
 # Consonance \open
-
-# Twilight Guard \fold
-
-# Old Avgi \fold
+mission `DT Avgi Consonance`
+	outfitter
+	source
+		government Avgi
+	to offer
+		has "tribute: Amathil"
+		has "tribute: Araio"
+		has "tribute: Aviskir"
+		has "tribute: Cyreal"
+		has "tribute: Livolua"
+		has "tribute: Mabatham"
+		has "tribute: Stilacrest"
+		has "tribute: Thilos"
+		has "tribute: Weledos"
+		has "tribute: Aktina Cylinder"
+		has "tribute: Ergastirio Station"
+		has "tribute: Outpost Alkos"
+		has "tribute: Outpost Pilos"
+		has "tribute: Peripheria"
+	on offer
+		set "license: Avgi Torch"
+		conversation
+			`As you walk into the outfitter on <source>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
+				decline
 
 # Dissonance \fold
+mission `DT Avgi Dissonance`
+	outfitter
+	source
+		government Avgi
+	to offer
+		has "tribute: Outpost Enka"
+		has "tribute: Outpost Leto"
+		has "tribute: Outpost Tekis"
+	on offer
+		set "license: Avgi Torch"
+		conversation
+			`As you walk into the outfitter on <source>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
+				decline
+
+# Twilight Guard \fold
+mission `DT Avgi Twilight Guard`
+	outfitter
+	source
+		government "Avgi (Twilight Guard)"
+	to offer
+		has "tribute: Feo Platform"
+		has "tribute: Navigeo Yards"
+	on offer
+		set "license: Avgi Atomics"
+		set "license: Twilight Guard"
+		conversation
+			`As you walk into the <source> military complex, a quivering, cowering Avgi hands you the Avgi Atomics and Twilight Guard licenses.`
+				decline
 
 # \close
 
-# Quarg \fold
+# Heliarch \fold
+mission `DT Heliarch`
+	landing
+	source
+		government Heliarch
+	to offer
+		has "tribute: Ring of Friendship"
+		has "tribute: Ring of Power"
+		has "tribute: Ring of Wisdom"
+	on offer
+		set "license: Heliarch"
+		event "DT Heliarch Outfitter"
+		conversation
+			`When you land on your recently acquired ringworld, a group of heliarchs approaches you. "A motion of peace, we will make. Access to our knowledge, you shall have." They hand you a Heliarch license.`
+				decline
 
-# Pug \fold
+# Gegno Scin \fold
+mission `DT Gegno Scin`
+	landing
+	source
+		government Gegno "Gegno Scin"
+	to offer
+		has "tribute: Byigii"
+		has "tribute: Dueyu Eitch"
+		has "tribute: Ef Aourtdye"
+		has "tribute: Gi Tiures"
+		has "tribute: Iemn Eitch"
+		has "tribute: Tschyss"
+		has "tribute: Beryl"
+		has "tribute: Cipi"
+		has "tribute: Dueitch Ae"
+		has "tribute: Ef Osch"
+		has "tribute: Enn Bue"
+		has "tribute: Gue Faur"
+		has "tribute: Oup Je"
+	on offer
+		set "license: Gegno Civilian"
+		set "license: Gegno Driller"
+		conversation
+			`On the doorstep of your ship is a set of metallic plates you recognize as the Gegno Civilian and Gegno Driller licenses. It would appear that they have even less interest in talking to you now.`
+				decline
 
-# \close
+# Gegno Vi \fold
+mission `DT Gegno Vi`
+	landing
+	source
+		government "Gegno Vi"
+	to offer
+		has "tribute: Enbye"
+		has "tribute: Essime"
+		has "tribute: Graede"
+		has "tribute: Siedi"
+		has "tribute: Sies Upi"
+		has "tribute: Ternituul"
+	on offer
+		set "license: Vi Evocati"
+		set "license: Vi Centurion"
+		set "license: Vi Lord"
+		conversation
+			`As you exit your ship, a Gegno in a full battle suit approaches you. He does nothing but hand you the symbol of the most respected Vi warfighter, the Vi Lord license.`
+				decline
+				
+# Unfettered \fold
+mission `DT Unfettered`
+	landing
+	source Darkcloak
+	to offer
+		has "tribute: Darkcloak"
+		has "tribute: Firelode"
+		has "tribute: Warfeed"
+	on offer
+		dialog `offer test`
+		set "license: Unfettered Militia"
+		conversation
+			`You walk into the shipyard on <source>, and the attendant at the front desk spits at you. "Filthy human! You have destroyed my people for no other reason than monetary gain!" He lunges at you, pulling a laser pistol as he closes.`
+			`	In response, you draw yours and shoot him in the face.`
+			`	Behind the smoke curling up from the dead Hai's charred skull, you see another attendant leave a militia license on the table and run out the door.`
+				decline
+				
+
 
 
