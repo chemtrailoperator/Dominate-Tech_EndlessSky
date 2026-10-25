@@ -37,7 +37,7 @@ mission `DT Avgi Consonance`
 	on offer
 		set "license: Avgi Torch"
 		conversation
-			`As you walk into the outfitter on <source>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
+			`As you walk into the outfitter on <origin>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
 				decline
 
 # Dissonance \fold
@@ -52,7 +52,7 @@ mission `DT Avgi Dissonance`
 	on offer
 		set "license: Avgi Torch"
 		conversation
-			`As you walk into the outfitter on <source>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
+			`As you walk into the outfitter on <origin>, the Avgi cower away from you. When you reach the main desk, a quivering attendant hands you an Avgi Torch license.`
 				decline
 
 # Twilight Guard \fold
@@ -67,7 +67,7 @@ mission `DT Avgi Twilight Guard`
 		set "license: Avgi Atomics"
 		set "license: Twilight Guard"
 		conversation
-			`As you walk into the <source> military complex, a quivering, cowering Avgi hands you the Avgi Atomics and Twilight Guard licenses.`
+			`As you walk into the <origin> military complex, a quivering, cowering Avgi hands you the Avgi Atomics and Twilight Guard licenses.`
 				decline
 
 # \close
@@ -136,8 +136,9 @@ mission `DT Gegno Vi`
 				
 # Unfettered \fold
 mission `DT Unfettered`
-	landing
-	source Darkcloak
+	outfitter
+	source
+		government "Hai (Unfettered)"
 	to offer
 		has "tribute: Darkcloak"
 		has "tribute: Firelode"
@@ -146,11 +147,425 @@ mission `DT Unfettered`
 		dialog `offer test`
 		set "license: Unfettered Militia"
 		conversation
-			`You walk into the shipyard on <source>, and the attendant at the front desk spits at you. "Filthy human! You have destroyed my people for no other reason than monetary gain!" He lunges at you, pulling a laser pistol as he closes.`
+			`You walk into the shipyard on <origin>, and the attendant at the front desk spits at you. "Filthy human! You have destroyed my people for no other reason than monetary gain!" He lunges at you, pulling a laser pistol as he closes.`
 			`	In response, you draw yours and shoot him in the face.`
 			`	Behind the smoke curling up from the dead Hai's charred skull, you see another attendant leave a militia license on the table and run out the door.`
 				decline
+
+# Successors (not currently supported, you can't tribute the successors right now anyway.) \fold
+
+# People's Houses \open
+	
+# High Houses \fold
+
+# \close
+
+# Kor Efret \fold
+mission `DT Kor Efret`
+	outfitter
+	source
+		government "Kor Efret"
+	to offer
+		has "tribute: Karek Fornati"
+		has "tribute: Korati Efreti"
+		has "tribute: Laki Nemparu"
+		has "tribute: Setar Fort"
+		has "tribute: Tefkar Ret"
+	on offer
+		event "DT Efret Outfitter"
+		conversation
+			`The Korath in the outfitter plaster themselves against the walls and stuff into corners as you enter, timorously showing their palms. The owner of the outfitter approaches you slowly, and leads you through a secret door to a store of weapons, including technology from all of their supposed rivals.`
+				decline
 				
+# Pug \fold
+mission `DT Pug`
+	landing
+	source
+		government "Pug (Wanderer)"
+	to offer
+		has "tribute: Vara Pug"
+	on offer
+		event "DT Pug Outfitter"
+		conversation
+			`The Pug, who staunchly ignore you or who just aren't there, appear to have built an outfitter and shipyard as a peace offering.`
+				decline
 
+# Quarg \fold
+mission `DT Quarg`
+	landing
+	source
+		government "Quarg" "Quarg (Gegno)" "Quarg (Incipias)" "Quarg (Hai)" "Quarg (Kor Efret)"
+	to offer
+		has "tribute: Echo"
+		has "tribute: Forpelog"
+		has "tribute: Grakhord"
+		has "tribute: Humanika"
+		has "tribute: Lagrange"
+		has "tribute: Arroharg"
+		has "tribute: Giaru Gegno"
+		has "tribute: Ruelogakk"
+		has "tribute: Truklar"
+		has "tribute: Alta Hai"
+		has "tribute: Spec Inci"
+		has "tribute: Ut Divitas"
+		has "tribute: Kuwaru Efreti"
+	on offer
+		event "DT Quarg Outfitter"
+		conversation
+			`A Quarg approaches you and gives you a data chip with instructions on how to access hidden Quarg shipyards and outfitters in some locations of the galaxy.`
+				decline
 
+# Remnant \fold
+mission `DT Remnant`
+	landing
+	source
+		government "Remnant"
+	to offer
+		has "tribute: Aventine"
+		has "tribute: Caelian"
+		has "tribute: Viminal"
+	on offer
+		set "license: Remnant"
+		set "license: Remnant Capital"
+		conversation
+			`As you land from orbit on the <origin>, now scarred from your battle asserting control over the Remnant species, you are notified that to prevent further bloodshed, the Prefects have elected to issue you the access codes necessary to bypass security systems and purchase outfits.`
+				decline
 
+# Republic Pre-Free Worlds
+mission `DT Republic without Free Worlds`
+	outfitter
+	source
+		government "Republic"
+	to offer
+		has "tribute: Ada"
+		has "tribute: Alexandria"
+		has "tribute: Alfheim"
+		has "tribute: Asgard"
+		has "tribute: Asterus"
+		has "tribute: Bivrost"
+		has "tribute: Bounty"
+		has "tribute: Calda"
+		has "tribute: Carbuncle Station"
+		has "tribute: Cassandra"
+		has "tribute: Chiron"
+		has "tribute: Clink"
+		has "tribute: Earth"
+		has "tribute: Farpoint"
+		has "tribute: Farseer"
+		has "tribute: Featherweight"
+		has "tribute: Fenrir Station"
+		has "tribute: Follower"
+		has "tribute: Geminus"
+		has "tribute: Gemstone"
+		has "tribute: Geyser"
+		has "tribute: Glory"
+		has "tribute: Haze"
+		has "tribute: Heartland"
+		has "tribute: Helheim"
+		has "tribute: Hermes"
+		has "tribute: Hestia"
+		has "tribute: Hope"
+		has "tribute: Huginn Station"
+		has "tribute: Hydra Station"
+		has "tribute: Ingot"
+		has "tribute: Leviathan Station"
+		has "tribute: Luna"
+		has "tribute: Maelstrom"
+		has "tribute: Mainsail"
+		has "tribute: Mani"
+		has "tribute: Mars"
+		has "tribute: Martini"
+		has "tribute: Memory"
+		has "tribute: Midgard"
+		has "tribute: Muninn Station"
+		has "tribute: Muspel"
+		has "tribute: New Argentina"
+		has "tribute: New Austria"
+		has "tribute: New Boston"
+		has "tribute: New China"
+		has "tribute: New Greenland"
+		has "tribute: New Iceland"
+		has "tribute: New Kansas"
+		has "tribute: New Sahara"
+		has "tribute: New Switzerland"
+		has "tribute: New Wales"
+		has "tribute: Nifel"
+		has "tribute: Norn"
+		has "tribute: Pearl"
+		has "tribute: Phoenix Station"
+		has "tribute: Pilot"
+		has "tribute: Poisonwood"
+		has "tribute: Prime"
+		has "tribute: Relic"
+		has "tribute: Serpens"
+		has "tribute: Shiver"
+		has "tribute: Shroud"
+		has "tribute: Silver"
+		has "tribute: Skillet"
+		has "tribute: Splashdown"
+		has "tribute: Thrall"
+		has "tribute: Triton Station"
+		has "tribute: Tundra"
+		has "tribute: Vail"
+		has "tribute: Valhalla"
+		has "tribute: Vinci"
+		has "tribute: Watcher"
+		has "tribute: Windblain"
+		has "tribute: Arabia"
+		has "tribute: Arachne Station"
+		has "tribute: Bourne"
+		has "tribute: Charon Station"
+		has "tribute: Clark"
+		has "tribute: Cornucopia"
+		has "tribute: Dancer"
+		has "tribute: Darkstone"
+		has "tribute: Deep"
+		has "tribute: Dune"
+		has "tribute: Flood"
+		has "tribute: Glaze"
+		has "tribute: Harmony"
+		has "tribute: Hopper"
+		has "tribute: Lichen"
+		has "tribute: Longjump"
+		has "tribute: Mere"
+		has "tribute: New Britain"
+		has "tribute: New Holland"
+		has "tribute: New India"
+		has "tribute: New Portland"
+		has "tribute: New Tibet"
+		has "tribute: New Washington"
+		has "tribute: Oasis"
+		has "tribute: Oblivion"
+		has "tribute: Poseidos"
+		has "tribute: Rand"
+		has "tribute: Rust"
+		has "tribute: Shorebreak"
+		has "tribute: Sinter"
+		has "tribute: Skymoot"
+		has "tribute: Solace"
+		has "tribute: Starcross"
+		has "tribute: Sundrinker"
+		has "tribute: Thunder"
+		has "tribute: Trinket"
+		has "tribute: Twinstar"
+		has "tribute: Typhon Station"
+		has "tribute: Wayfarer"
+		has "tribute: Winter"
+		has "tribute: Wyvern Station"
+		has "tribute: Zug"
+		not "free worlds plot completed"
+		not "event: start of hostilities"
+	on offer
+		set "license: City-Ship"
+		set "license: Navy"
+		set "license: Navy Cruiser"
+		set "license: Navy Carrier"
+		set "license: Pilot's"
+		conversation
+			`At the <origin> outfitter, you are told that because you are the apex predator of humans, you may order tech from anyone there.`
+				decline
+				
+# Republic Post Free Worlds \fold
+mission `DT Republic with Free Worlds`
+	outfitter
+	source
+		government "Republic"
+	to offer
+		has "tribute: Ada"
+		has "tribute: Alexandria"
+		has "tribute: Alfheim"
+		has "tribute: Asgard"
+		has "tribute: Asterus"
+		has "tribute: Bivrost"
+		has "tribute: Bounty"
+		has "tribute: Calda"
+		has "tribute: Carbuncle Station"
+		has "tribute: Cassandra"
+		has "tribute: Chiron"
+		has "tribute: Clink"
+		has "tribute: Earth"
+		has "tribute: Farpoint"
+		has "tribute: Farseer"
+		has "tribute: Featherweight"
+		has "tribute: Fenrir Station"
+		has "tribute: Follower"
+		has "tribute: Geminus"
+		has "tribute: Gemstone"
+		has "tribute: Geyser"
+		has "tribute: Glory"
+		has "tribute: Haze"
+		has "tribute: Heartland"
+		has "tribute: Helheim"
+		has "tribute: Hermes"
+		has "tribute: Hestia"
+		has "tribute: Hope"
+		has "tribute: Huginn Station"
+		has "tribute: Hydra Station"
+		has "tribute: Ingot"
+		has "tribute: Leviathan Station"
+		has "tribute: Luna"
+		has "tribute: Maelstrom"
+		has "tribute: Mainsail"
+		has "tribute: Mani"
+		has "tribute: Mars"
+		has "tribute: Martini"
+		has "tribute: Memory"
+		has "tribute: Midgard"
+		has "tribute: Muninn Station"
+		has "tribute: Muspel"
+		has "tribute: New Argentina"
+		has "tribute: New Austria"
+		has "tribute: New Boston"
+		has "tribute: New China"
+		has "tribute: New Greenland"
+		has "tribute: New Iceland"
+		has "tribute: New Kansas"
+		has "tribute: New Sahara"
+		has "tribute: New Switzerland"
+		has "tribute: New Wales"
+		has "tribute: Nifel"
+		has "tribute: Norn"
+		has "tribute: Pearl"
+		has "tribute: Phoenix Station"
+		has "tribute: Pilot"
+		has "tribute: Poisonwood"
+		has "tribute: Prime"
+		has "tribute: Relic"
+		has "tribute: Serpens"
+		has "tribute: Shiver"
+		has "tribute: Shroud"
+		has "tribute: Silver"
+		has "tribute: Skillet"
+		has "tribute: Splashdown"
+		has "tribute: Thrall"
+		has "tribute: Triton Station"
+		has "tribute: Tundra"
+		has "tribute: Vail"
+		has "tribute: Valhalla"
+		has "tribute: Vinci"
+		has "tribute: Watcher"
+		has "tribute: Windblain"
+		has "free worlds plot completed"
+	on offer
+		set "license: City-Ship"
+		set "license: Navy"
+		set "license: Navy Cruiser"
+		set "license: Navy Carrier"
+		set "license: Pilot's"
+		conversation
+			`At the <origin> outfitter, you are told that because you are the apex predator of humans, you may order tech from anyone there.`
+				decline
+
+# Free Worlds \fold
+mission `DT Free Worlds`
+	outfitter
+	source
+		government "Free Worlds"
+	to offer
+		has "tribute: Arabia"
+		has "tribute: Arachne Station"
+		has "tribute: Bourne"
+		has "tribute: Charon Station"
+		has "tribute: Clark"
+		has "tribute: Cornucopia"
+		has "tribute: Dancer"
+		has "tribute: Darkstone"
+		has "tribute: Deep"
+		has "tribute: Dune"
+		has "tribute: Flood"
+		has "tribute: Glaze"
+		has "tribute: Harmony"
+		has "tribute: Hopper"
+		has "tribute: Lichen"
+		has "tribute: Longjump"
+		has "tribute: Mere"
+		has "tribute: New Britain"
+		has "tribute: New Holland"
+		has "tribute: New India"
+		has "tribute: New Portland"
+		has "tribute: New Tibet"
+		has "tribute: New Washington"
+		has "tribute: Oasis"
+		has "tribute: Oblivion"
+		has "tribute: Poseidos"
+		has "tribute: Rand"
+		has "tribute: Rust"
+		has "tribute: Shorebreak"
+		has "tribute: Sinter"
+		has "tribute: Skymoot"
+		has "tribute: Solace"
+		has "tribute: Starcross"
+		has "tribute: Sundrinker"
+		has "tribute: Thunder"
+		has "tribute: Trinket"
+		has "tribute: Twinstar"
+		has "tribute: Typhon Station"
+		has "tribute: Wayfarer"
+		has "tribute: Winter"
+		has "tribute: Wyvern Station"
+		has "tribute: Zug"
+		has "free worlds plot completed"
+	on offer
+		set "license: Militia"
+		conversation
+			`As much as they may hate being forced to, the Free Worlds <origin> outfitter surrenders access keys to militia technology sales.`
+				decline
+
+# Wanderer \fold
+mission `DT Wanderer Outfit`
+	outfitter
+	source
+		government "Wanderer"
+	to offer
+		has "tribute: Kort Kehai"
+		has "tribute: Kort Vek'kri"
+		has "tribute: Tik Klai"
+		has "tribute: Var' Kar'i'i"
+		has "tribute: Var' Kayi"
+		has "tribute: Var' Roi"
+		has "tribute: Vara K'chrai"
+		has "tribute: Vara Kehi'ki"
+		has "tribute: Vara Ke'sok"
+		has "tribute: Vara Ke'stai"
+		has "tribute: Vara Rakak"
+		has "tribute: Varu Ek'lak'lai"
+		has "tribute: Varu K'est"
+		has "tribute: Varu K'prai"
+		has "tribute: Varu Mer'ek"
+		has "tribute: Varu Tek'kai"
+		has "tribute: Varu Tev'kei"
+	on offer
+		set "license: Wanderer Outfits"
+		conversation
+			`In an effort to preserve it, the peace-loving Wanderers surrender their outfits to you.`
+				decline
+
+mission `DT Wanderer Ship`
+	shipyard
+	source
+		government "Wanderer"
+	to offer
+		has "tribute: Kort Kehai"
+		has "tribute: Kort Vek'kri"
+		has "tribute: Tik Klai"
+		has "tribute: Var' Kar'i'i"
+		has "tribute: Var' Kayi"
+		has "tribute: Var' Roi"
+		has "tribute: Vara K'chrai"
+		has "tribute: Vara Kehi'ki"
+		has "tribute: Vara Ke'sok"
+		has "tribute: Vara Ke'stai"
+		has "tribute: Vara Rakak"
+		has "tribute: Varu Ek'lak'lai"
+		has "tribute: Varu K'est"
+		has "tribute: Varu K'prai"
+		has "tribute: Varu Mer'ek"
+		has "tribute: Varu Tek'kai"
+		has "tribute: Varu Tev'kei"
+	on offer
+		set "license: Wanderer"
+		set "license: Wanderer Military"
+		conversation
+			`Because you have total control over the race, the Wanderers have no choice but to sell you their ships.`
+				decline
+				
